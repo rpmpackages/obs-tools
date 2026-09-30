@@ -169,8 +169,8 @@ Summary: %{name}
 Requires: %{name}
 Requires: (%{pkg_manager_name} or %{_bindir}/%{pkg_manager_name})
 Requires: (%{_bindir}/bash or bash)
-Requires(post): update-alternatives
-Requires(postun): update-alternatives
+Requires(post): (update-alternatives or alternatives)
+Requires(postun): (update-alternatives or alternatives)
 
 %%description %{pkg_manager_name}-pkg
 %{summary}.
@@ -191,8 +191,8 @@ BuildArch: noarch
 Summary: %{name}
 Requires: (%{pkg_manager_name} or %{_bindir}/%{pkg_manager_name})
 Requires: (%{_bindir}/bash or bash)
-Requires(post): update-alternatives
-Requires(postun): update-alternatives
+Requires(post): (update-alternatives or alternatives)
+Requires(postun): (update-alternatives or alternatives)
 
 %%description %{pkg_manager_name}-pkg-checkaval
 %{summary}.

@@ -1,10 +1,10 @@
 name: Publish COPR Build
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  
   push:
-    tags:
-      - '*'
+    paths:
+      - obs-tools.spec
 
 jobs:
   copr-build:

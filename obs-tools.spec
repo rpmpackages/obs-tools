@@ -1,6 +1,6 @@
 Name: obs-tools
-Version: 46
-Release: 1.75
+Version: 47
+Release: 0
 License: GPLv3
 Summary: %{name}
 Source0: obs_service_run.sh
